@@ -1,9 +1,14 @@
 package de.porsche.cic3.hb.mouserecorder.help;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 import java.util.List;
 
 public final class FileHelper {
@@ -30,13 +35,23 @@ public final class FileHelper {
 		    ex.printStackTrace();
 		}
 	}
+
+	public String getCurrentProjectPath(){
+		return Paths.get("").toAbsolutePath().toString();
+	}
 	
 	public List<String> readMouseMovement(String file){
 		
 		List<String> allLines = null;
-		
+		String dir = getCurrentProjectPath();
 		try {
-			allLines = Files.readAllLines(Paths.get(file));
+			Path filePath = Paths.get(dir + File.separator + file);
+			
+			if(filePath == null)
+			{
+				return new ArrayList<String>();
+			}
+			allLines = Files.readAllLines(filePath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

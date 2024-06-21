@@ -19,7 +19,7 @@ public final class MouseManager {
 	private int limitation = RECORD_SEC / TRACKING_PERIOD;
 	private static volatile int counter = 0;
 	private final FileHelper fileHelper;
-	private final static String FILE = "position.txt";
+	private final static String FILE = "\\MouseRecorder\\position.txt";
 	private final static String CLICK = "click";
 	
 	public MouseManager() {
