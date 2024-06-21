@@ -2,8 +2,6 @@ package de.porsche.cic3.hb.mouserecorder.help;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -22,9 +20,6 @@ public final class FileHelper {
 		return fileHelper;
 	}
 	
-	private void clearCache() {
-		sBuilder.delete(0, sBuilder.length());
-	}
 	
 	public void writeToFile(String contents, String file) {
 		

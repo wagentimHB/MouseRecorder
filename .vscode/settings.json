@@ -1,0 +1,10 @@
+{
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/*.jar"
+        ],
+        "exclude": [
+            "lib/jnativehook-2.2.2.jar"
+        ]
+    }
+}
