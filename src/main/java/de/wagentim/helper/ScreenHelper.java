@@ -1,4 +1,4 @@
-package de.porsche.cic3.hb.mouserecorder.help;
+package de.wagentim.helper;
 
 import java.awt.Dimension;
 import java.awt.Point;

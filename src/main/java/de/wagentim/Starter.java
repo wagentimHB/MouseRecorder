@@ -1,10 +1,12 @@
-package de.porsche.cic3.hb.mouserecorder.core;
+package de.wagentim;
 
 import java.awt.Dimension;
 
-import de.porsche.cic3.hb.mouserecorder.help.ScreenHelper;
+import de.wagentim.core.MouseManager;
+import de.wagentim.helper.ScreenHelper;
 
 public class Starter {
+	
 
 	private final ScreenHelper screenHelper;
 	private final MouseManager mouseManager;

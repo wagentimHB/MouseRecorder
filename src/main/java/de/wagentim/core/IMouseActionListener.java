@@ -1,4 +1,4 @@
-package de.porsche.cic3.hb.mouserecorder.core;
+package de.wagentim.core;
 
 public interface IMouseActionListener {
     public void mouseLeftClicked();

@@ -1,4 +1,4 @@
-package de.porsche.cic3.hb.mouserecorder.core;
+package de.wagentim.core;
 
 import java.awt.AWTException;
 import java.awt.MouseInfo;
@@ -9,7 +9,8 @@ import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import de.porsche.cic3.hb.mouserecorder.help.FileHelper;
+import de.wagentim.helper.FileHelper;
+
 
 public final class MouseManager {
 	

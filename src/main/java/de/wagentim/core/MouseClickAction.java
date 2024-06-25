@@ -1,10 +1,9 @@
-package de.porsche.cic3.hb.mouserecorder.core;
+package de.wagentim.core;
 
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 import java.util.logging.Logger;
 
-import com.github.kwhat.jnativehook.GlobalScreen;
 
 
 public class MouseClickAction {
@@ -26,22 +25,6 @@ public class MouseClickAction {
             return;
         }
 
-        Thread t = new Thread(new Runnable(){
-
-            Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
-            logger.setLevel(Level.WARNING);
-            
-            @Override
-            public void run() {
-                while(!stop){
-
-                   
-                }
-            }
-
-        });
-
-        t.start();
     }
 
     public void stop(){
